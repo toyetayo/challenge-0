@@ -19,4 +19,11 @@ puts "PST: $#{'%.2f' % pst_amount} - #{(PST * 100).to_i}%"
 puts "GST: $#{'%.2f' % gst_amount} - #{(GST * 100).to_i}%"
 puts "Grand Total: $#{'%.2f' % grand_total}"
 
-#2.
+#2. beloe prints a short message after the grand_total
+if grand_total <= 5.00
+  puts "Pocket Change"
+elsif grand_total < 20.00
+  puts "Wallet Time"
+else
+  puts "Charge It!"
+end
