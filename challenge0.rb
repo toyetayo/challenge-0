@@ -53,3 +53,4 @@ elsif grand_total < 20
 else
   puts "Charge It!"
 end
+
